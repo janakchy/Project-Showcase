@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: rgb(0, 46, 65);
+}
+body header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3em;
+}
+body header a {
+  font-size: 2rem;
+  color: rgb(0, 46, 65);
+  text-decoration: none;
+}
+body header .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-self: center;
+}
+body header .title h1 {
+  font-size: 5.5rem;
+  font-weight: 800;
+}
+body header .title h2 {
+  font-size: 2rem;
+  text-align: end;
+}
+body main {
+  width: 90vw;
+  margin: 3em auto;
+  overflow: hidden;
+}
+body main h1 {
+  font-size: 4rem;
+  text-decoration: underline;
+  text-align: center;
+}
+body main .projects {
+  color: azure;
+  margin-top: 10em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+body main .projects .project {
+  background-color: rgb(0, 46, 65);
+  border-radius: 10px;
+  border: 1px solid red;
+}
+body main .projects .project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main .projects img {
+  max-width: 300px;
+  margin-top: 10px;
+}
+body main .projects h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+body main .projects h3 {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+body main .projects p {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+body main .projects button {
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  border-radius: 15px;
+  border-color: wheat;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding: 1em 1em;
+}
+body main .projects button a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: rgb(37, 34, 34);
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+  body main .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  body header .title h1 {
+    font-size: 3rem;
+  }
+  body header .title h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
